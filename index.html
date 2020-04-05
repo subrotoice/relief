@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+      <header class="container">
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="serviceadd.php">Add Service</a></li>
+            <li><a href="#">Show Data</a>
+              <ul class="dropdown-content">
+                <li><a href="showData.php?union=pou">পৌরসভা</a></li>
+                <li><a href="showData.php?union=am">আমঝুপি</a></li>
+                <li><a href="showData.php?union=po">পিরোজপুর</a></li>
+                <li><a href="showData.php?union=ku">কতুবপুর</a></li>
+                <li><a href="showData.php?union=amd">আমদহ</a></li>
+                <li><a href="showData.php?union=bu">বুড়িপোতা</a></li>
+              </ul>
+            </li>
+          </ul>
+        </header>
+
+    <div class="s130">
+        <form class="regSearch" method="post" action="repDetails.php">
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+              </svg>
+            </div>
+            <input id="search" type="text" placeholder="আপনার এনআইডি দিন" autocomplete="off"/>
+          </div>
+          <div class="input-field second-wrap">
+            <button class="btn-search" type="submit">SEARCH</button>
+          </div>
+        </div>
+        <span class="info">
+        <div id="txtHint"></div>
+        </span>
+      </form>
+      
+    </div>
+
+    <footer>
+      <div class="container">
+          <p>&copy; Meherpur Sadar Upozilla</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/ajaxloder.js"></script> 
+  </body>
+</html>
